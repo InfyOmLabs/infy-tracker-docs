@@ -2,11 +2,11 @@
   <div class="home">
     <div class="home__container">
       <div>
-        <img :src="$withBase(data.heroImage)" alt="" class="home__hero-img">
+        <img :src="$withBase('/assets/img/'+data.heroImage)" alt="" class="home__hero-img">
       </div>
       <div class="home__header-row">
         <div class="d-flex item-center">
-        <img :src="'/'+data.timerLogoImg+'.png'" :alt="data.timerLogoImg"
+        <img :src="'/assets/img/'+data.timerLogoImg+'.png'" :alt="data.timerLogoImg"
              :title="data.timerLogoImg" class="home__header-logo"/>
         <h1 class="text-center">{{data.header}}</h1>
         </div>
@@ -17,7 +17,7 @@
       <h2 class="text-center home__feature-title">Features</h2>
       <div class="home__feature-row" v-for="item in data.feature">
         <div class="home__feature-thumb">
-          <img :src="'/'+item.img+'.'+item.type" :alt="item.img" class="home__feature-img"
+          <img :src="'/assets/img/'+item.img+'.'+item.type" :alt="item.img" class="home__feature-img"
                :title="item.img" />
         </div>
         <div class="home__feature-detail">

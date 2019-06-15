@@ -6,7 +6,7 @@ module.exports = {
             ['link', { rel: 'icon', href: '/favicon.ico' }]
         ],
         search: false,
-        logo: '/logo.png',
+        logo: '/assets/img/logo.png',
         nav: [
             { text: 'Home', link: '/' },
             { text: 'Guide', link: '/guide/' },
