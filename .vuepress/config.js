@@ -1,4 +1,5 @@
 module.exports = {
+    base: "https://infyomlabs.github.io/infy-tracker-docs/",
     title: 'InfyTracker',
     description: 'Minimal Task and Time Management tool',
     themeConfig: {
