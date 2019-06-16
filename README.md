@@ -1,11 +1,11 @@
 ---
 layout: Homepage
-heroImage: /time-management-hero.jpg
+heroImage: time-management-hero.jpg
 header: 'InfyTracker'
 description: 'Minimal time tracking and task management app built on Laravel+CoreUI for small teams to keep everything simple and everyone on the same page.
 It provides very simple task management with features like time tracking, clients and project management, Task tagging, team management along with web timer.'
 actionText: Get Started →
-actionLink: /guide/
+actionLink: /infy-tracker/guide/
 timerLogoImg: timer-logo
 feature:
 - img: client-projects
