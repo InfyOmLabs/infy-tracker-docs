@@ -2,7 +2,7 @@
   <div class="home">
     <div class="home__container">
       <div>
-        <img :src="$withBase('assets/img/'+data.heroImage)" alt="" class="home__hero-img">
+        <img :src="$withBase('assets/img/'+data.heroImage)+'.jpg'" :alt="data.heroImage" class="home__hero-img">
       </div>
       <div class="home__header-row">
         <div class="d-flex item-center">
@@ -26,11 +26,11 @@
         </div>
       </div>
       <div class="text-center">
-        <a :href="data.actionLink" class="home__btn">{{data.actionText}}</a>
+        <router-link :to="data.actionLink" class="home__btn">{{data.actionText}}</router-link>
       </div>
     </div>
     <div class="footer" v-if="data.footer">
-      {{ data.footer }}
+      © 2015-{{ new Date().getFullYear() }} {{ data.footer }}.
     </div>
   </div>
 </template>
