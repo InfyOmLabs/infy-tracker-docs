@@ -1,9 +1,7 @@
 <template>
   <div class="home">
     <div class="home__container">
-      <div>
-        <img :src="$withBase('assets/img/'+data.heroImage)+'.jpg'" :alt="data.heroImage" class="home__hero-img">
-      </div>
+      <img :src="$withBase('assets/img/'+data.heroImage)+'.jpg'" :alt="data.heroImage" class="home__hero-img">
       <div class="home__header-row">
         <div class="d-flex item-center">
         <img :src="'assets/img/'+data.timerLogoImg+'.png'" :alt="data.timerLogoImg"
@@ -25,18 +23,44 @@
           <p class="home__feature-desc">{{item.description}}</p>
         </div>
       </div>
+      <div class="home__slider">
+        <hooper :autoPlay="true" :playSpeed="3000">
+          <slide v-for="(slide, indx) in data.sliderImages" :key="indx" :index="indx">
+            <img :src="'assets/img/'+slide.img+'.'+slide.type" :alt="slide.img" class="img-fluid" :title="slide.img">
+          </slide>
+          <hooper-navigation slot="hooper-addons"></hooper-navigation>
+          <hooper-pagination slot="hooper-addons"></hooper-pagination>
+          <hooper-progress slot="hooper-addons"></hooper-progress>
+        </hooper>
+      </div>
       <div class="text-center">
         <router-link :to="data.actionLink" class="home__btn">{{data.actionText}}</router-link>
       </div>
     </div>
-    <div class="footer" v-if="data.footer">
+    <footer class="footer" v-if="data.footer">
       © 2015-{{ new Date().getFullYear() }} {{ data.footer }}.
-    </div>
+    </footer>
   </div>
 </template>
 
 <script>
+    import {
+        Hooper,
+        Slide, Navigation as HooperNavigation,
+        Pagination as HooperPagination,
+        Progress as HooperProgress
+    } from 'hooper';
+  import 'hooper/dist/hooper.css';
+
   export default {
+    components: {
+      Hooper,
+      Slide,
+      HooperNavigation,
+      HooperPagination,
+      HooperProgress
+    },
+
     computed: {
       data() {
         return this.$page.frontmatter;

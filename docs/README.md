@@ -32,6 +32,19 @@ feature:
   type: jpg
   heading: Reports
   description: Details reporting with various filters like User, Activity Type, Project with static and dynamic date intervals and more.
+sliderImages:
+- img:  client
+  type: png
+- img:  project
+  type: png
+- img:  user
+  type: png
+- img:  task_detail
+  type: png 
+- img:  report
+  type: png   
+- img:  role
+  type: png  
 footer: InfyOm Technologies
 ---
 

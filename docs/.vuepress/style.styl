@@ -8,105 +8,87 @@ $container
   max-width 960px
   margin auto
 
-.d-flex {
+.d-flex
   display flex
-}
 
-.item-center {
+.item-center
   align-items center
   justify-content center
-}
 
-.text-center {
+.text-center
   text-align center
-}
 
-.site-name {
+.img-fluid
+  max-width 100%
+  height auto
+
+.site-name
     @extends $heading-text
-}
 
-.home {
+.home
   max-width 100%
 
-  @media (max-width 720px) {
+  @media (max-width 719px)
     text-align center
-  }
 
-  &__container {
+  &__container
     @extends $container
-  }
 
-  &__hero-img {
+  &__hero-img
     max-width 100%
     height auto
     max-height 100%
-  }
 
-  &__header-row {
+  &__header-row
     margin-top 70px
     margin-bottom 70px
 
-    h1 {
+    h1
       margin-bottom 0
       margin-top 0
       margin-left 24px
       @extends $heading-text
-    }
 
-    p {
+    p
       margin-top 8px
       @extends $heading-text
-    }
-  }
 
-  &__header-logo {
+  &__header-logo
     max-width 40px
-  }
 
-  &__feature-container {
+  &__feature-container
     @extends $container
-  }
 
-  &__feature-row {
-    display flex
-    justify-content center
-    align-items center
+  &__feature-row
+    @extends .d-flex
+    @extends .item-center
     margin-bottom 70px
 
-    @media (max-width 719px) {
+    @media (max-width 719px)
       flex-flow column
-    }
 
-    &:nth-child(even) {
+    &:nth-child(even)
 
-      @media (min-width 720px) {
-        .home__feature-detail {
+      @media (min-width 720px)
+        .home__feature-detail
           order 1
-        }
 
-        .home__feature-thumb {
+        .home__feature-thumb
           order 2
           box-shadow 2px 2px 5px 0 rgb(214, 214, 214)
-        }
-      }
-    }
-  }
 
-  &__feature-title {
+  &__feature-title
     @extends $heading-text
     border-bottom 0
-  }
 
-  &__feature-heading {
+  &__feature-heading
     @extends $heading-text
-  }
 
-  &__feature-detail {
+  &__feature-detail
     flex 1 1 auto
-  }
 
-  &__feature-thumb {
-    display flex
+  &__feature-thumb
+    @extends .d-flex
     height 250px
     min-width 250px
     max-width 250px
@@ -115,36 +97,70 @@ $container
     border-radius 50%
     overflow hidden
     box-shadow -4px 2px 5px 0 #d6d6d6
-  }
 
-  &__feature-img {
+  &__feature-img
     max-width 100%
     max-height 100%
     height auto
     object-fit contain
-  }
 
-  &__feature-desc {
-    line-height: 1.5
-    font-family: 'Merriweather', serif
+  &__feature-desc
+    line-height 1.5
+    font-family 'Merriweather', serif
     opacity .9
 
-    @media (min-width 720px) {
+    @media (min-width 720px)
       max-width 90%
-    }
 
-    @media (min-width 960px) {
+    @media (min-width 960px)
       max-width 70%
-    }
-  }
 
-  &__btn {
-    display: inline-block
-    color: #fff
-    background-color: #3eaf7c
-    padding: .8rem 1.6rem
-    border-radius: 4px
-    border-bottom: 1px solid #389d70
-    margin-bottom 32px
-  }
-}
+  &__btn
+    display inline-block
+    color #fff
+    background-color #3eaf7c
+    padding .8rem 1.6rem
+    border-radius 4px
+    border-bottom 1px solid #389d70
+    margin-bottom 70px
+    margin-top 32px
+
+  &__slider
+    @media (max-width 1066px)
+      padding 0 13px
+
+  .footer
+    margin 0 -2rem
+
+  //style for customise slider
+
+  .hooper
+    height auto
+    &:focus
+      outline none
+
+    .hooper-navigation
+      left 0
+      right 0
+      top 0
+      bottom 0
+
+    .hooper-next
+      right -45px
+
+    .hooper-prev
+      left -45px
+
+    .hooper-next,
+    .hooper-prev
+      &:focus
+        outline none
+
+    .hooper-indicators
+      position relative
+      top -6px
+
+    .hooper-indicator
+      padding 6px
+      border-radius 50%
+      margin-right 6px
