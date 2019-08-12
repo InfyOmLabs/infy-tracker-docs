@@ -43,8 +43,7 @@
                                     very nice web timer to track the time for the particular task.
                                 </p>
                                 <div class="add-btn pricing-btn_wrap ml-0">
-                                    <a href="/docpage/" class="btn btn-success" target="_blank">
-                                        Get started</a>
+                                    <router-link :to="'/docs/'" class="btn btn-success">Get started</router-link>
                                 </div>
                             </div>
                         </div>
