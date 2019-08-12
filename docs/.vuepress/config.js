@@ -14,8 +14,8 @@ module.exports = {
         search: false,
         logo: '/assets/img/logo.png',
         nav: [
-            { text: 'Home', link: '/docpage/' },
-            { text: 'Guide', link: '/guide/' },
+            { text: 'Home', link: '/' },
+            { text: 'Docs', link: '/docs/' },
         ],
         sidebar: 'auto'
     }
