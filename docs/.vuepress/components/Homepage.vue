@@ -6,9 +6,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <nav class="navbar navbar-expand-lg navbar-light">
-                                <a class="navbar-brand" href="#"><img src="../public/assets/img/logo.png" alt="#"></a>
-                                <h4 class="navbar-brand-name">InfyTracker</h4>
+                            <nav class="navbar navbar-expand-lg navbar-light border-bottom-0 py-lg-0">
+                                <a class="navbar-brand p-0" href="#"><img src="../public/assets/img/logo.png" alt="#"></a>
+                                <h4 class="navbar-brand-name m-0">InfyTracker</h4>
                                 <button class="navbar-toggler navbar-toggler_second" type="button"
                                         data-toggle="collapse"
                                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -18,7 +18,7 @@
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav ml-auto">
                                         <li class="nav-item active">
-                                            <a href="/docpage/" class="nav-link" target="_blank">Docs</a>
+                                            <a href="/docpage/" class="nav-link py-4" target="_blank">Docs</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -42,7 +42,7 @@
                                     Tasks management with time entries, team management along with roles and permissions and a
                                     very nice web timer to track the time for the particular task.
                                 </p>
-                                <div class="add-btn pricing-btn_wrap">
+                                <div class="add-btn pricing-btn_wrap ml-0">
                                     <a href="/docpage/" class="btn btn-success" target="_blank">
                                         Get started</a>
                                 </div>
@@ -557,7 +557,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-10">
-                        <div class="add-box d-flex align-items-center">
+                        <div class="add-box d-flex flex-column flex-lg-row align-items-center">
                             <img src="../public/assets/img/shield-green.svg" class="img-fluid shield" alt="#">
                             <div class="add-content">
                                 <h3> Time tracker made easy</h3>
@@ -612,7 +612,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="copyright">
-                            <p>Copyright © 2019. Insurance LLC</p>
+                            <p>Copyright © 2019. InfyOm Technologies</p>
                         </div>
                     </div>
                 </div>
@@ -637,13 +637,16 @@
 @import "./../public/assets/css/circular-std.css";
 @import "./../public/assets/css/style.css";
 
+    .navbar {
+        height: auto;
+    }
+
     .navbar-brand {
         img {
             max-height: 35px;
         }
 
         &-name {
-            margin-top: 12px !important;
         }
     }
 
@@ -657,6 +660,10 @@
     .hero-title {
         &__desc {
             text-transform: initial;
+
+            @media (min-width: 768px) and (max-width: 991px) {
+                max-width: 65%;
+            }
         }
     }
 
