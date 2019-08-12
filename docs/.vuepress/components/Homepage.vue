@@ -125,7 +125,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="item-box">
                             <div class="item-icon color1 d-flex justify-content-center align-items-center m-auto">
-                                <i class="fas fa-user-tie color1 item-icon__icon"></i>
+                                <i class="fas fa-user-tie item-icon__icon item-icon__icon--color1"></i>
                             </div>
                             <h6>Clients</h6>
                             <p>
@@ -136,7 +136,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="item-box">
                             <div class="item-icon color2 d-flex justify-content-center align-items-center m-auto">
-                                <i class="fas fa-folder-open color2 item-icon__icon"></i>
+                                <i class="fas fa-folder-open item-icon__icon item-icon__icon--color2"></i>
                             </div>
                             <h6>Projects</h6>
                             <p>
@@ -147,7 +147,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="item-box">
                             <div class="item-icon color3 d-flex justify-content-center align-items-center m-auto">
-                                <i class="fas fa-users color3 item-icon__icon"></i>
+                                <i class="fas fa-users item-icon__icon item-icon__icon--color3"></i>
                             </div>
                             <h6>Users (Team)</h6>
                             <p>
@@ -158,7 +158,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="item-box">
                             <div class="item-icon color4 d-flex justify-content-center align-items-center m-auto">
-                                <i class="fas fa-user color4 item-icon__icon"></i>
+                                <i class="fas fa-user item-icon__icon item-icon__icon--color4"></i>
                             </div>
                             <h6>Roles + Permissions</h6>
                             <p>
@@ -169,7 +169,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="item-box">
                             <div class="item-icon color5 d-flex justify-content-center align-items-center m-auto">
-                                <i class="fas fa-tasks color5 item-icon__icon"></i>
+                                <i class="fas fa-tasks item-icon__icon item-icon__icon--color5"></i>
                             </div>
                             <h6>Task Management</h6>
                             <p>
@@ -180,7 +180,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="item-box">
                             <div class="item-icon color6 d-flex justify-content-center align-items-center m-auto">
-                                <i class="fas fa-paperclip color6 item-icon__icon"></i>
+                                <i class="fas fa-paperclip item-icon__icon item-icon__icon--color6"></i>
                             </div>
                             <h6>File Management</h6>
                             <p>
@@ -191,7 +191,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="item-box">
                             <div class="item-icon color1 d-flex justify-content-center align-items-center m-auto">
-                                <i class="fas fa-comments color1 item-icon__icon"></i>
+                                <i class="fas fa-comments item-icon__icon item-icon__icon--color1"></i>
                             </div>
                             <h6>Comments & Tags</h6>
                             <p>
@@ -202,7 +202,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="item-box">
                             <div class="item-icon color2 d-flex justify-content-center align-items-center m-auto">
-                                <i class="fas fa-user-clock color2 item-icon__icon"></i>
+                                <i class="fas fa-user-clock item-icon__icon item-icon__icon--color2"></i>
                             </div>
                             <h6>Time Entries & Widget</h6>
                             <p>Keeping a track of your time spent on a particular task is important. We made it easy by providing a very simple web timer widget. Click the timer, select task and start the timer. Once you are done, insert notes and stop the timer. It will automatically record time entry on that task.</p>
@@ -211,7 +211,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="item-box">
                             <div class="item-icon color3 d-flex justify-content-center align-items-center m-auto">
-                                <i class="fas fa-file color3 item-icon__icon"></i>
+                                <i class="fas fa-file item-icon__icon item-icon__icon--color3"></i>
                             </div>
                             <h6>Reports</h6>
                             <p>Create reports to get insights What has been accomplished, by Whom, in What amount of time, on Which project, of Which client. All these information are easy to access by creating reports with desired filters based on your need for a given period of time by reports.</p>
@@ -318,6 +318,30 @@
 
         &__icon {
             font-size: 40px;
+
+            &--color1 {
+                color: #00A7C5;
+            }
+
+            &--color2 {
+                color: #DE34ED;
+            }
+
+            &--color3 {
+                color: #8AD77A;
+            }
+
+            &--color4 {
+                color: #C8B544;
+            }
+
+            &--color5 {
+                color: #CD8675;
+            }
+
+            &--color6 {
+                color: #6767CB;
+            }
         }
     }
 
