@@ -1,23 +1,23 @@
 # Guide
 
-**This project is still under development and not recommended for production use.**
-
-Here is getting started guide with InfyTracker. The goal of a tool is to provide minimal task and time management for small teams. Small teams should be able to manage projects of clients with tasks and time tracking on tasks. It also provides basic reporting with various filters.
+The goal of a tool is to provide minimal task and time management for small teams who can not afford to pay higher monthly rentals for heavy and costly Task and Project Management tools. Small teams should be able to manage projects & tasks with time tracking with minimal & simple collaboration and reporting.
 
 ## Installation Guide
+
 Installation of InfyTracker is pretty easy just like any other laravel application.
 
-### Clone the repo
+### Requirements
 
+It is assumed that you have primary knowledge of Laravel installation since this application is built on Laravel. But it's not necessary if you have primary knowledge of PHP and Server Installation.
+
+You can read more about Installation [here](https://laravel.com/docs/5.8).
+
+### Create a project via composer
 Clone the repo from Github with the following command.
 
-`git clone git@github.com:InfyOmLabs/infy-tracker.git`
+`composer create-project infyomlabs/infy-tracker -s dev`
 
-### Install Dependencies
-
-Install composer dependecies by,
-
-`composer install`
+### Install npm Dependencies
 
 Install node modules,
 
@@ -25,7 +25,7 @@ Install node modules,
 
 ### Setup environment
 
-Copy `.env.example` as `.env` and set up your environment. Nothing special, just database, app, and mail config should be enough with app key.
+Set up your environment by modifying `.env` file. Database, App, and mail config should be enough with app key. You can also update storage driver if you need. All your attachments will be placed into that.
 
 ### Modify default User seeder
 
@@ -56,13 +56,27 @@ You should be able to go to the application and do a login with default username
 ## Concepts
 
 ### Clients
-Manage all of your clients.
+You can manage all of your clients with their basic details under Clients menu.
 
 ### Projects
-Projects can be managed here. One client may have multiple projects running. so you can manage your projects per client. You can also assign who is working on which projects.
+One client may have multiple projects running. so you can manage your projects per client. You can also assign who is working on which projects from your team members. Assign them to the project and they can see those projects only.
 
-### Team/User Management
-You can manage your team. Create your team members into the system from here.
+### Roles + Permissions
+You can manage who can see/manage what based on your needs via creating Roles. Role may have name and set of permissions. The following permissions are available to be used while creating Roles.
+
+- Manage Clients - Can User manage (Add/Update/Delete) Clients list
+- Manage Projects - Can User manage Projects list
+- Manage Entry - Can User manage all the time entries of any User
+- Manage Users - Can User manage Users list
+- Manage Tags - Can User manage Tags list
+- Manage Activities - Can User manage Activities list under Settings
+- Manage Reports - Can User can see all the reports
+- Manage Roles - Can User manage Roles list
+
+By default User can see only tasks which are assigned to him from his assigned Projects.
+
+### Team/Users
+All your team members can be managed here. Create your team members with desired role that you want to assign him/her.
 
 ### Tasks
 Tasks are the real important thing. You can create a task for different projects. Task has the following fields,
@@ -79,9 +93,17 @@ Time entries are useful to track the work that has been done on a particular tas
 
 Time entries can be done two ways, Manual and via Web Timer. Web timer is available to track time automatically. You can select a task and start a timer, once you are done come back and stop the timer and enter the notes about what you've done and it will automatically record a timer entry on that task.
 
-Web timer also works even if you start the timer and then close the tab/browser, whenever you are back it will still remember the start time of the task.
+Web timer also works even if you start the timer and then close the tab/browser or you go offline, whenever you are back it will still remember the start time of the task.
 
-### Reports (Beta)
+### Comments
+
+Any user who has access to task can comment on a Task. Via comments, team can collobrate on tasks with each other and can keep a track of communication happened on a particular task.
+
+### File Management
+
+To communicate in more better ways, Team members can also upload files on Task. You can utlize storage driver feature of Laravel to upload/store files on your choice of platform like Local, S3, FTP etc.
+
+### Reports
 Reports are useful for managers and team leader to see who worked on what. Bunch of filters is available like,
 
 - Assigned To
@@ -90,7 +112,7 @@ Reports are useful for managers and team leader to see who worked on what. Bunch
 - Task
 - Date Interval
 
-**This Feature is still in beta and major improvements are coming soon.**
+Reports will be dynamic and shows the Time spent on various tasks by given filters with very nice Group by data representation.
 
 ### Settings
 It also provides a few settings.
@@ -100,10 +122,6 @@ Tags are useful to tag any task for multiple purposes. Like, Milestone, Sprint, 
 
 #### Activity Types
 Activity Types are a type of work that has been done. Like Coding, Peer Reviews, Documentation, Research, etc. You can manage them here as per your need.
-
-## Roadmap
-
-This app is still in beta and under development. You can check/track a roadmap [here](https://trello.com/b/dRa3gaMR/infy-tracker).
 
 ## Contribution
 Everyone is welcomed to contribute to the project. All bugs and feature ideas are welcomed.

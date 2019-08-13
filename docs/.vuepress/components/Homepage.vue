@@ -201,8 +201,8 @@
                         <div class="add-box">
                             <img src="../public/assets/img/shield-green.svg" class="img-fluid shield" alt="#">
                             <div class="add-content">
-                                <h3 class="mt-1"> Time tracking made easy</h3>
-                                <p>At InfyTracker, we are commited to provide best time tracking tool.</p>
+                                <h3 class="mt-1">Start Tracking your time</h3>
+                                <p>Open source and free to use without any credit mention</p>
                             </div>
                             <div class="add-btn">
                                 <router-link :to="'/docs/'" class="btn btn-success">Get started</router-link>
