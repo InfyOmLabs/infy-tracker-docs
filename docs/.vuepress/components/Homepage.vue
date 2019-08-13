@@ -1,7 +1,6 @@
 <template>
     <div>
         <header>
-            <!-- Navbar -->
             <div class="nav-menu">
                 <div class="container">
                     <div class="row">
@@ -29,89 +28,41 @@
                     </div>
                 </div>
             </div>
-            <!--// Navbar -->
-            <!-- Main Title -->
-            <div class="main-title__alt header__bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-6">
-                            <div class="hero-title  text-center  text-md-left">
-                                <h1>InfyTracker</h1>
-                                <p class="hero-title__desc">
-                                    InfyTracker is a minimal time tracker and task management tools built for small teams to keep everything simple and everyone on the same page.
-                                </p>
-                                <p class="hero-title__desc">
-                                    It provides very simple task management with features like Clients and Projects management, Tasks management with time entries, Team management along with Roles and Permissions and a very nice Web Timer to track the time for the particular task.
-                                </p>
-                                <div class="add-btn pricing-btn_wrap ml-0">
-                                    <router-link :to="'/docs/'" class="btn btn-success">Get started</router-link>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="main-banner_md">
-                                <img src="../public/assets/img/time-management-hero.jpg" class="img-fluid" alt="#">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-style d-none d-md-block">
-                    <img src="../public/assets/img/bg-1.png" class="img-fluid" alt="#">
-                </div>
-            </div>
-            <!--// Main Title -->
-
-            <!--  Contact Modal -->
-            <div class="modal fade" id="contactmodal" tabindex="-1" role="dialog" aria-labelledby="phpcontactform"
-                 aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-zoom" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-
-                            <form class="quote-form" action="php/contact.php" method="post" id="phpcontactform">
-                                <h5 class="text-center mt-3 mb-4">Get a Free Quote!</h5>
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <input type="text" class="form-control" id="first_name"
-                                                   name="first_name" placeholder="First Name*" required>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <input type="text" class="form-control" id="last_name" name="last_name"
-                                                   placeholder="Last Name*" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="email" name="email"
-                                           placeholder="Email Address*" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="phone" name="phone"
-                                           placeholder="Phone*" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="pac-input" name="address"
-                                           placeholder="Address*" required>
-                                </div>
-                                <button type="submit" class="btn btn-success w-100" id="js-contact-btn">
-                                    <strong>Get Free Quote</strong>
-                                </button>
-                                <div id="js-contact-result" data-success-msg="Success, We will get back to you soon"
-                                     data-error-msg="Oops! Something went wrong"></div>
-
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
         </header>
-        <!--//END HEADER -->
-
+        <!-- Main Title -->
+        <div class="main-title__alt header__bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="hero-title  text-center  text-md-left">
+                            <h1>InfyTracker</h1>
+                            <p class="hero-title__desc">
+                                InfyTracker is a minimal time tracker and task management tools built for small teams to
+                                keep everything simple and everyone on the same page.
+                            </p>
+                            <p class="hero-title__desc">
+                                It provides very simple task management with features like Clients and Projects
+                                management, Tasks management with time entries, Team management along with Roles and
+                                Permissions and a very nice Web Timer to track the time for the particular task.
+                            </p>
+                            <div class="add-btn pricing-btn_wrap ml-0">
+                                <router-link :to="'/docs/'" class="btn btn-success">Get started</router-link>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="main-banner_md">
+                            <img src="../public/assets/img/time-management-hero.jpg" class="img-fluid" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-style d-none d-md-block">
+                <img src="../public/assets/img/bg-1.png" class="img-fluid" alt="#">
+            </div>
+        </div>
+        <!--// Main Title -->
+        <!-- Middle content -->
         <section class="space bg-light">
             <div class="container">
                 <div class="row">
@@ -129,7 +80,9 @@
                             </div>
                             <h6>Clients</h6>
                             <p>
-                                The client is a very first starting entity of any Task or Project management system. You may have one or more than one clients. InfyTracker provides very clean and simple client management with client details.
+                                The client is a very first starting entity of any Task or Project management system. You
+                                may have one or more than one clients. InfyTracker provides very clean and simple client
+                                management with client details.
                             </p>
                         </div>
                     </div>
@@ -140,7 +93,9 @@
                             </div>
                             <h6>Projects</h6>
                             <p>
-                                Projects are the very second entity for organizing stuff. Manage your projects which belongs to the same or different clients since you may have multiple projects for the same client with assigning Team members to the particular projects.
+                                Projects are the very second entity for organizing stuff. Manage your projects which
+                                belongs to the same or different clients since you may have multiple projects for the
+                                same client with assigning Users to the particular projects.
                             </p>
                         </div>
                     </div>
@@ -151,7 +106,9 @@
                             </div>
                             <h6>Users (Team)</h6>
                             <p>
-                                Behind every great Product, there is a great team. You can manage all of your team members at a single place along with their Projects and Roles and what permissions they can have and what they can access and not.
+                                Behind every great Product, there is a great team. You can manage all of your team
+                                members at a single place along with their Projects and Roles and what permissions they
+                                can have and what they can access and not.
                             </p>
                         </div>
                     </div>
@@ -162,7 +119,9 @@
                             </div>
                             <h6>Roles + Permissions</h6>
                             <p>
-                                You have total control on your team members for who can access what. The administration can define roles as per need with desired permissions and assign those roles to various team members.
+                                You have total control on your team members for who can access what. The administration
+                                can define roles as per need with desired permissions and assign those roles to various
+                                team members.
                             </p>
                         </div>
                     </div>
@@ -173,7 +132,9 @@
                             </div>
                             <h6>Task Management</h6>
                             <p>
-                                InfyTracker provides very clean task management with only necessary fields. The task can have multiple assignees, priority, reporter, status, and description. No more complex and long task management form.
+                                InfyTracker provides very clean task management with only necessary fields. The task can
+                                have multiple assignees, priority, reporter, status, and description. No more complex
+                                and long task management form.
                             </p>
                         </div>
                     </div>
@@ -184,7 +145,9 @@
                             </div>
                             <h6>File Management</h6>
                             <p>
-                                Attach your files on your tasks to attach more information on the task along with option of storing your files with your choice of the file storage service from various services like Amazon S3, Digital Ocean, Local and FTP.
+                                Attach your files on your tasks to attach more information on the task along with option
+                                of storing your files with your choice of the file storage service from various services
+                                like Amazon S3, Digital Ocean, Local and FTP.
                             </p>
                         </div>
                     </div>
@@ -195,7 +158,10 @@
                             </div>
                             <h6>Comments & Tags</h6>
                             <p>
-                                Collaboration between the team is important. You can comment on tasks to keep your task information up to date and to collaborate with your team members. Also, you can put your choice of Tags on the task with a way you want. Create custom tags which are useful to filter out tasks.
+                                Collaboration between the team is important. You can comment on tasks to keep your task
+                                information up to date and to collaborate with your team members. Also, you can put your
+                                choice of Tags on the task with a way you want. Create custom tags which are useful to
+                                filter out tasks.
                             </p>
                         </div>
                     </div>
@@ -205,7 +171,10 @@
                                 <i class="fas fa-user-clock item-icon__icon item-icon__icon--color2"></i>
                             </div>
                             <h6>Time Entries & Widget</h6>
-                            <p>Keeping a track of your time spent on a particular task is important. We made it easy by providing a very simple web timer widget. Click the timer, select task and start the timer. Once you are done, insert notes and stop the timer. It will automatically record time entry on that task.</p>
+                            <p>Keeping a track of your time spent on a particular task is important. We made it easy by
+                                providing a very simple web timer widget. Click the timer, select task and start the
+                                timer. Once you are done, insert notes and stop the timer. It will automatically record
+                                time entry on that task.</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
@@ -214,14 +183,36 @@
                                 <i class="fas fa-file item-icon__icon item-icon__icon--color3"></i>
                             </div>
                             <h6>Reports</h6>
-                            <p>Create reports to get insights What has been accomplished, by Whom, in What amount of time, on Which project, of Which client. All these information are easy to access by creating reports with desired filters based on your need for a given period of time by reports.</p>
+                            <p>Create reports to get insights What has been accomplished, by Whom, in What amount of
+                                time, on Which project, of Which client. All these information are easy to access by
+                                creating reports with desired filters based on your need for a given period of time by
+                                reports.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!--==================== FOOTER ====================-->
+        <!--// Middle content-->
+        <!--==================== ADD ====================-->
+        <section class="add-section clearfix collapse-wrap">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="add-box">
+                            <img src="../public/assets/img/shield-green.svg" class="img-fluid shield" alt="#">
+                            <div class="add-content">
+                                <h3 class="mt-1"> Time tracking made easy</h3>
+                                <p>At InfyTracker, we are commited to provide best time tracking tool.</p>
+                            </div>
+                            <div class="add-btn">
+                                <router-link :to="'/docs/'" class="btn btn-success">Get started</router-link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--//END ADD -->
         <footer>
             <div class="container">
                 <div class="row">
@@ -250,7 +241,10 @@
                     <div class="col-md-5">
                         <div class="footer-title">
                             <h6>Made with <i class="fa fa-heart"></i> by InfyOm Technologies</h6>
-                            <p>We are a group of creative nerds making awesome stuff for Web & Mobile. We just love to contribute to open source technologies. We always try to build something which helps developers to save their time. so they can spend a bit more time with their friends & family. </p>
+                            <p>We are a group of creative nerds making awesome stuff for Web & Mobile. We just love to
+                                contribute to open source technologies. We always try to build something which helps
+                                developers to save their time. so they can spend a bit more time with their friends &
+                                family. </p>
                         </div>
                     </div>
                 </div>
