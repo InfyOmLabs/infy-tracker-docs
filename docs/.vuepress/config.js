@@ -7,7 +7,7 @@ module.exports = {
         ['link', { rel: 'stylesheet', href: '/assets/css/all.css' }],
         ['link', { rel: 'stylesheet', href: '/assets/css/bootstrap.min.css' }],
         ['link', { rel: 'stylesheet', href: '/assets/css/bootstrap.min.css' }],
-        ['link', { rel: 'stylesheet', href: '/assets/css/style.css.css' }],
+        ['link', { rel: 'stylesheet', href: '/assets/css/style.css' }],
         ["script", { src: "/assets/js/jquery-3.4.1.min.js" }],
         ["script", { src: "/assets/js/popper.min.js" }],
         ["script", { src: "/assets/js/bootstrap.min.js" }],
