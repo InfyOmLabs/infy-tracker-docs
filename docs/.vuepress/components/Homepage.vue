@@ -198,11 +198,10 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-10">
-                        <div class="add-box">
+                        <div class="add-box d-flex align-items-center flex-column flex-lg-row justify-content-between">
                             <img src="../public/assets/img/shield-green.svg" class="img-fluid shield" alt="#">
                             <div class="add-content">
                                 <h3 class="mt-1">Start Tracking your time</h3>
-                                <p>Open source and free to use without any credit mention</p>
                             </div>
                             <div class="add-btn">
                                 <router-link :to="'/docs/'" class="btn btn-success">Get started</router-link>
