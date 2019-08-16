@@ -1,3 +1,11 @@
+$slider-btn
+  width 35px
+  height 35px
+  border-radius 50%
+  box-shadow 0 8px 15px 0 rgba(0, 0, 0, .3)
+  background-color #ffffff
+  fill gray
+
 .theme-container
   > .navbar
      position fixed
@@ -15,3 +23,51 @@
   .header-anchor
     font-size 32px
     color #3eaf7c
+
+.hooper
+  height auto !important
+  &:focus
+    outline none
+
+  .hooper-navigation
+    left 0
+    right 0
+    top 0
+    bottom 0
+
+  .hooper-next
+    right -45px
+
+    &:hover
+      svg {
+        fill black
+      }
+
+    svg {
+      @extends $slider-btn
+    }
+
+  .hooper-prev
+    left -45px
+    &:hover
+      svg {
+        fill black
+      }
+
+    svg {
+      @extends $slider-btn
+    }
+
+  .hooper-next,
+  .hooper-prev
+    &:focus
+      outline none
+
+  .hooper-indicators
+    position relative
+    top -6px
+
+  .hooper-indicator
+    padding 6px
+    border-radius 50%
+    margin-right 6px

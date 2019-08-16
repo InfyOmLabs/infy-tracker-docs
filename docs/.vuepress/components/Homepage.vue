@@ -45,7 +45,7 @@
                                 management, Tasks management with time entries, Team management along with Roles and
                                 Permissions and a very nice Web Timer to track the time for the particular task.
                             </p>
-                            <div class="add-btn pricing-btn_wrap ml-0">
+                            <div class="add-btn pricing-btn_wrap ml-0 mt-lg-4">
                                 <router-link :to="'/docs/'" class="btn btn-success">Get started</router-link>
                             </div>
                         </div>
@@ -191,11 +191,75 @@
                     </div>
                 </div>
             </div>
+            <!-- slider section -->
+            <div class="space-top bg-image">
+                <div class="container">
+                    <div class="bg-style2">
+                        <img src="../public/assets/img/bg-2.png" class="img-fluid" alt="#">
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 px-5">
+                            <hooper :autoPlay="true" :playSpeed="4000">
+                                <slide index=1>
+                                    <img src="../public/assets/img/slider/client.png" alt="client" class="img-fluid"
+                                         title="">
+                                </slide>
+                                <slide index=2>
+                                    <img src="../public/assets/img/slider/project.png" alt="client" class="img-fluid"
+                                         title="">
+                                </slide>
+                                <slide index=3>
+                                    <img src="../public/assets/img/slider/report.png" alt="client" class="img-fluid"
+                                         title="">
+                                </slide>
+                                <slide index=4>
+                                    <img src="../public/assets/img/slider/role.png" alt="client" class="img-fluid"
+                                         title="">
+                                </slide>
+                                <slide index=5>
+                                    <img src="../public/assets/img/slider/task_detail.png" alt="client"
+                                         class="img-fluid"
+                                         title="">
+                                </slide>
+                                <slide index=6>
+                                    <img src="../public/assets/img/slider/time-tracker-login.png" alt="client"
+                                         class="img-fluid"
+                                         title="">
+                                </slide>
+                                <slide index=7>
+                                    <img src="../public/assets/img/slider/user.png" alt="client" class="img-fluid"
+                                         title="">
+                                </slide>
+                                <hooper-navigation slot="hooper-addons"></hooper-navigation>
+                                <hooper-pagination slot="hooper-addons"></hooper-pagination>
+                                <hooper-progress slot="hooper-addons"></hooper-progress>
+                            </hooper>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /slider section -->
         </section>
         <!--// Middle content-->
         <!--==================== ADD ====================-->
         <section class="add-section clearfix collapse-wrap">
             <div class="container">
+                <div class="row justify-content-around">
+                    <div class="count-column count-column--build">
+                        <div class="count-column__number counter">1234</div>
+                        <div class="count-column__title text-uppercase mt-2">Build</div>
+                    </div>
+                    <div class="count-column count-column--download">
+                        <div class="count-column__number counter">5678</div>
+                        <div class="count-column__title text-uppercase mt-2">Download</div>
+                    </div>
+                    <div class="count-column count-column--commit">
+                        <div class="count-column__number counter">9123</div>
+                        <div class="count-column__title text-uppercase mt-2">Commit</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container space-top">
                 <div class="row justify-content-center">
                     <div class="col-md-10">
                         <div class="add-box d-flex align-items-center flex-column flex-lg-row justify-content-between">
@@ -262,20 +326,36 @@
 </template>
 
 <script>
-  export default {
-    computed: {
-      data () {
-        return this.$page.frontmatter
-      },
-    },
-  }
+    import {
+        Hooper,
+        Slide, Navigation as HooperNavigation,
+        Pagination as HooperPagination,
+        Progress as HooperProgress
+    } from 'hooper';
+    import 'hooper/dist/hooper.css';
+
+    export default {
+        components: {
+            Hooper,
+            Slide,
+            HooperNavigation,
+            HooperPagination,
+            HooperProgress
+        },
+
+        computed: {
+            data() {
+                return this.$page.frontmatter;
+            }
+        }
+    }
 </script>
 
 <style lang="scss" scoped>
-@import "./../public/assets/css/all.css";
-@import "./../public/assets/css/bootstrap.min.css";
-@import "./../public/assets/css/circular-std.css";
-@import "./../public/assets/css/style.css";
+    @import "./../public/assets/css/all.css";
+    @import "./../public/assets/css/bootstrap.min.css";
+    @import "./../public/assets/css/circular-std.css";
+    @import "./../public/assets/css/style.css";
 
     .navbar {
         height: auto;
@@ -297,6 +377,7 @@
         }
 
     }
+
     .hero-title {
         &__desc {
             text-transform: initial;
@@ -344,4 +425,73 @@
         }
     }
 
+    .count-column {
+        border-radius: 50%;
+        background-color: #ffffff;
+        box-shadow: 0 25px 60px 0 rgba(46, 61, 98, 0.05);
+        width: 220px;
+        height: 220px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        @media (max-width: 520px) {
+            margin-top: 20px;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 50%;
+        }
+
+        &--build {
+            .count-column__number {
+                color: #EF4059;
+            }
+
+            &:before {
+                border-color: #EF4059;
+            }
+        }
+
+        &--download {
+            .count-column__number {
+                color: #5DD8D3;
+            }
+
+            &:before {
+                border-color: #5DD8D3;
+            }
+        }
+
+        &--commit {
+            .count-column__number {
+                color: #9364D4;
+            }
+
+            &:before {
+                border-color: #9364D4;
+            }
+        }
+
+        &__number {
+            font-size: 40px;
+        }
+
+        &__title {
+            color: #666E82;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+    }
 </style>
