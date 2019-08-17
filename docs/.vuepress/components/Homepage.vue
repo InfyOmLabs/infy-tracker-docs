@@ -247,15 +247,15 @@
                 <div class="row justify-content-around">
                     <div class="count-column count-column--build">
                         <div class="count-column__number counter">1234</div>
-                        <div class="count-column__title text-uppercase mt-2">Build</div>
+                        <div class="count-column__title mt-2">Builds</div>
                     </div>
                     <div class="count-column count-column--download">
                         <div class="count-column__number counter">5678</div>
-                        <div class="count-column__title text-uppercase mt-2">Download</div>
+                        <div class="count-column__title mt-2">Downloads</div>
                     </div>
                     <div class="count-column count-column--commit">
                         <div class="count-column__number counter">9123</div>
-                        <div class="count-column__title text-uppercase mt-2">Commit</div>
+                        <div class="count-column__title mt-2">Commits</div>
                     </div>
                 </div>
             </div>
@@ -279,17 +279,7 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="footer-title">
-                            <h6>ADDRESS</h6>
-                            <p>A/306, 3rd floor, Aditya Complex,<br>
-                                Opp. Astha Square, Nr. VIP Circle,<br>
-                                Utaran, Mota Varachha,<br>
-                                Surat - 394101, Gujarat,<br>
-                                India</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6">
                         <div class="footer-title">
                             <h6>FOLLOW US</h6>
                             <ul>
@@ -301,7 +291,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-6">
                         <div class="footer-title">
                             <h6>Made with <i class="fa fa-heart"></i> by InfyOm Technologies</h6>
                             <p>We are a group of creative nerds making awesome stuff for Web & Mobile. We just love to
