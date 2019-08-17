@@ -198,37 +198,44 @@
                         <img src="../public/assets/img/bg-2.png" class="img-fluid" alt="#">
                     </div>
                     <div class="row justify-content-center">
-                        <div class="col-12 px-5">
-                            <hooper :autoPlay="true" :playSpeed="4000">
+                        <div class="col-12 slider-column">
+                            <hooper :autoPlay="false" :playSpeed="4000">
                                 <slide index=1>
                                     <img src="../public/assets/img/slider/client.png" alt="client" class="img-fluid"
                                          title="">
+                                    <span class="slider-caption text-center">Client Management</span>
                                 </slide>
                                 <slide index=2>
                                     <img src="../public/assets/img/slider/project.png" alt="client" class="img-fluid"
                                          title="">
+                                    <span class="slider-caption text-center">Project management</span>
                                 </slide>
                                 <slide index=3>
                                     <img src="../public/assets/img/slider/report.png" alt="client" class="img-fluid"
                                          title="">
+                                    <span class="slider-caption text-center">Reporting</span>
                                 </slide>
                                 <slide index=4>
                                     <img src="../public/assets/img/slider/role.png" alt="client" class="img-fluid"
                                          title="">
+                                    <span class="slider-caption text-center">Roles</span>
                                 </slide>
                                 <slide index=5>
                                     <img src="../public/assets/img/slider/task_detail.png" alt="client"
                                          class="img-fluid"
                                          title="">
+                                    <span class="slider-caption text-center">Clients</span>
                                 </slide>
                                 <slide index=6>
                                     <img src="../public/assets/img/slider/time-tracker-login.png" alt="client"
                                          class="img-fluid"
                                          title="">
+                                    <span class="slider-caption text-center">Login page</span>
                                 </slide>
                                 <slide index=7>
                                     <img src="../public/assets/img/slider/user.png" alt="client" class="img-fluid"
                                          title="">
+                                    <span class="slider-caption text-center">User management</span>
                                 </slide>
                                 <hooper-navigation slot="hooper-addons"></hooper-navigation>
                                 <hooper-pagination slot="hooper-addons"></hooper-pagination>
@@ -483,5 +490,19 @@
             font-weight: bold;
             letter-spacing: 2px;
         }
+    }
+
+    .slider-column {
+        padding: 0 64px;
+
+        @media (min-width: 581px) {
+            padding: 0 48px;
+        }
+    }
+
+    .slider-caption {
+        display: inherit;
+        position: relative;
+        top: -36px;
     }
 </style>
