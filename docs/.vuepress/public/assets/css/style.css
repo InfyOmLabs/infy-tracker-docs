@@ -328,6 +328,11 @@ header {
     text-align: center;
 }
 
+
+.center-title--scrnshot {
+    margin: 38px;
+}
+
 .center-title p {
     color: #bbbdc6;
 }
@@ -417,6 +422,8 @@ header {
     background: #fff;
     padding: 36px 50px;
     margin: 30px 0 0;
+    position: relative;
+    z-index: 1;
 }
 
 .item-box h6 {
@@ -1241,4 +1248,18 @@ footer {
 .insurance-title_wrap2 h6 {
     font-size: 20px;
     margin: 0 0 10px;
+}
+
+.slider-container {
+    padding: 0 70px;
+}
+
+@media (min-width: 1200px){
+    .slider-container {
+        padding: 0 80px;
+    }
+}
+
+.lg-sub-html p {
+    color: white !important;
 }

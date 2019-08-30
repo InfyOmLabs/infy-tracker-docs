@@ -24,50 +24,98 @@ $slider-btn
     font-size 32px
     color #3eaf7c
 
-.hooper
-  height auto !important
-  &:focus
-    outline none
-
-  .hooper-navigation
-    left 0
-    right 0
+// full view screen image title
+  .lg-sub-html
     top 0
-    bottom 0
+    padding-top 17px !important
+    opacity .7
+    background unset
+    z-index 1082 !important
+    bottom unset !important
+    pointer-events none
+    background unset !important
+    transition transform 250ms cubic-bezier(0, 0, 0.25, 1) 0s, opacity 250ms cubic-bezier(0, 0, 0.25, 1) !important
 
-  .hooper-next
-    right -60px
+  .lg-hide-items
 
-    &:hover
-      svg {
-        fill black
-      }
+    .lg-sub-html
+      opacity 0;
+      transition transform 250ms cubic-bezier(0, 0, 0.25, 1) 0s, opacity 250ms cubic-bezier(0, 0, 0.25, 1) !important
 
-    svg {
-      @extends $slider-btn
-    }
 
-  .hooper-prev
-    left -60px
-    &:hover
-      svg {
-        fill black
-      }
+// slider override
+.lSSlideWrapper
+  position static !important
 
-    svg {
-      @extends $slider-btn
-    }
-
-  .hooper-next,
-  .hooper-prev
-    &:focus
-      outline none
-
-  .hooper-indicators
-    position relative
-    top -6px
-
-  .hooper-indicator
-    padding 6px
+  .lSNext,
+  .lSPrev
+    background-image unset !important
+    background-color white;
     border-radius 50%
-    margin-right 6px
+    width 40px
+    height 40px
+
+    @media screen and (min-width: 1200px)
+      width 50px
+      height 50px
+
+    // replaced arrow of next prev
+    &:before
+      font-family 'Font Awesome 5 Free';
+      font-weight 900;
+      -moz-osx-font-smoothing grayscale;
+      -webkit-font-smoothing antialiased;
+      display inline-block;
+      font-style normal;
+      font-variant normal;
+      text-rendering auto;
+      line-height 1;
+      position absolute;
+      left 12px;
+      top 7px
+      opacity: .5
+      font-size 25px;
+      transition opacity 0.35s linear 0s
+      background-color white
+
+      @media screen and (min-width: 1200px)
+        font-size 30px
+
+
+    &:hover
+
+      &:before
+        opacity 1
+        transition opacity 0.35s linear 0s
+
+  // position override for next prev
+  .lSPrev
+    left 15px !important
+    box-shadow 4px 0 12px rgba(0,0,0,0.2)
+
+
+    &:before
+      content "\F0D9"
+
+      @media screen and (min-width: 1200px)
+        left 16px
+        top 11px
+
+
+
+  .lSNext
+    right 15px !important
+    box-shadow -4px 0 12px rgba(0,0,0,0.2)
+
+
+    &:before
+      content "\f0da"
+      left 16px
+
+      @media screen and (min-width: 1200px)
+        left 21px
+        top 11px
+
+// thumbnail  disable
+.lSPager.lSGallery
+  display: none;

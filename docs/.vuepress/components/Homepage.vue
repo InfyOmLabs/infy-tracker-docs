@@ -191,59 +191,156 @@
                     </div>
                 </div>
             </div>
-            <!-- slider section -->
             <div class="space-top bg-image">
                 <div class="container">
                     <div class="bg-style2">
                         <img src="../public/assets/img/bg-2.png" class="img-fluid" alt="#">
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-12 slider-column">
-                            <hooper :autoPlay="false" :playSpeed="4000">
-                                <slide index=1>
-                                    <img src="../public/assets/img/slider/client.png" alt="client" class="img-fluid"
-                                         title="">
-                                    <span class="slider-caption text-center">Client Management</span>
-                                </slide>
-                                <slide index=2>
-                                    <img src="../public/assets/img/slider/project.png" alt="client" class="img-fluid"
-                                         title="">
-                                    <span class="slider-caption text-center">Project management</span>
-                                </slide>
-                                <slide index=3>
-                                    <img src="../public/assets/img/slider/report.png" alt="client" class="img-fluid"
-                                         title="">
-                                    <span class="slider-caption text-center">Reporting</span>
-                                </slide>
-                                <slide index=4>
-                                    <img src="../public/assets/img/slider/role.png" alt="client" class="img-fluid"
-                                         title="">
-                                    <span class="slider-caption text-center">Roles</span>
-                                </slide>
-                                <slide index=5>
-                                    <img src="../public/assets/img/slider/task_detail.png" alt="client"
-                                         class="img-fluid"
-                                         title="">
-                                    <span class="slider-caption text-center">Clients</span>
-                                </slide>
-                                <slide index=6>
-                                    <img src="../public/assets/img/slider/time-tracker-login.png" alt="client"
-                                         class="img-fluid"
-                                         title="">
-                                    <span class="slider-caption text-center">Login page</span>
-                                </slide>
-                                <slide index=7>
-                                    <img src="../public/assets/img/slider/user.png" alt="client" class="img-fluid"
-                                         title="">
-                                    <span class="slider-caption text-center">User management</span>
-                                </slide>
-                                <hooper-navigation slot="hooper-addons"></hooper-navigation>
-                                <hooper-pagination slot="hooper-addons"></hooper-pagination>
-                                <hooper-progress slot="hooper-addons"></hooper-progress>
-                            </hooper>
-                        </div>
-                    </div>
                 </div>
+            </div>
+            <!-- slider section -->
+            <div class="center-title center-title--scrnshot">
+                <h2>Screenshots</h2>
+            </div>
+            <div class="container-fluid position-relative slider-container">
+                <ul id="imageGallery">
+                    <!--slider img 1 -->
+                    <li data-thumb="/assets/img/slider/clients.jpg" data-src="/assets/img/slider/clients.jpg"
+                        data-sub-html=".caption1">
+                        <img src="../public/assets/img/slider/clients.jpg" class="img-fluid" alt="clients"/>
+                        <div class="caption1 d-none">
+                            <h4>Clients</h4>
+                        </div>
+                    </li>
+                    <!--slider img 2 -->
+                    <li data-thumb="/assets/img/slider/edit-Report.jpg" data-src="/assets/img/slider/edit-Report.jpg"
+                        data-sub-html=".caption2">
+                        <img src="../public/assets/img/slider/edit-Report.jpg" class="img-fluid" alt="Edit reports"/>
+                        <div class="caption2 d-none">
+                            <h4>Edit Report</h4>
+                        </div>
+                    </li>
+                    <!--slider img 3 -->
+                    <li data-thumb="/assets/img/slider/edit-task-from-tasks.jpg" data-src="/assets/img/slider/edit-task-from-tasks.jpg"
+                        data-sub-html=".caption3">
+                        <img src="../public/assets/img/slider/edit-task-from-tasks.jpg" class="img-fluid" alt="edit task from tasks"/>
+                        <div class="caption3 d-none">
+                            <h4>Edit task from tasks</h4>
+                        </div>
+                    </li>
+                    <!--slider img 4 -->
+                    <li data-thumb="/assets/img/slider/edit-time-entry-from-time-entries.jpg"
+                        data-src="/assets/img/slider/edit-time-entry-from-time-entries.jpg"
+                        data-sub-html=".caption4">
+                        <img src="../public/assets/img/slider/edit-time-entry-from-time-entries.jpg" class="img-fluid"
+                        alt="edit time entry from time entries"/>
+                        <div class="caption4 d-none">
+                            <h4>Edit time entry from time entries</h4>
+                        </div>
+                    </li>
+                    <!--slider img 5 -->
+                    <li data-thumb="/assets/img/slider/new-Report.jpg" data-src="/assets/img/slider/new-Report.jpg"
+                        data-sub-html=".caption5">
+                        <img src="../public/assets/img/slider/new-Report.jpg" class="img-fluid" alt="New report"/>
+                        <div class="caption5 d-none">
+                            <h4>New Report</h4>
+                        </div>
+                    </li>
+                    <!--slider img 6 -->
+                    <li data-thumb="/assets/img/slider/new-task-from-tasks.jpg" data-src="/assets/img/slider/new-task-from-tasks.jpg"
+                        data-sub-html=".caption6">
+                        <img src="../public/assets/img/slider/new-task-from-tasks.jpg" class="img-fluid"
+                        alt="new task from tasks"/>
+                        <div class="caption6 d-none">
+                            <h4>New task from tasks</h4>
+                        </div>
+                    </li>
+                    <!--slider img 7 -->
+                    <li data-thumb="/assets/img/slider/new-time-entry-from-tasks.jpg" data-src="/assets/img/slider/new-time-entry-from-tasks.jpg"
+                        data-sub-html=".caption7">
+                        <img src="../public/assets/img/slider/new-time-entry-from-tasks.jpg" class="img-fluid"
+                        alt="new time entry from tasks"/>
+                        <div class="caption7 d-none">
+                            <h4>New time entry from task</h4>
+                        </div>
+                    </li>
+                    <!--slider img 8 -->
+                    <li data-thumb="/assets/img/slider/new-time-entry-from-time-entries.jpg"
+                        data-src="/assets/img/slider/new-time-entry-from-time-entries.jpg"
+                        data-sub-html=".caption8">
+                        <img src="../public/assets/img/slider/new-time-entry-from-time-entries.jpg" class="img-fluid"
+                        alt="new time entry from time entries"/>
+                        <div class="caption8 d-none">
+                            <h4>New time entry from time entries</h4>
+                        </div>
+                    </li>
+                    <!--slider img 9 -->
+                    <li data-thumb="/assets/img/slider/projects.jpg" data-src="/assets/img/slider/projects.jpg"
+                        data-sub-html=".caption9">
+                        <img src="../public/assets/img/slider/projects.jpg" class="img-fluid" alt="projects"/>
+                        <div class="caption9 d-none">
+                            <h4>Projects</h4>
+                        </div>
+                    </li>
+                    <!--slider img 10 -->
+                    <li data-thumb="/assets/img/slider/report-View.jpg" data-src="/assets/img/slider/report-View.jpg"
+                        data-sub-html=".caption10">
+                        <img src="../public/assets/img/slider/report-View.jpg" class="img-fluid" alt="report view"/>
+                        <div class="caption10 d-none">
+                            <h4>Report view</h4>
+                        </div>
+                    </li>
+                    <!--slider img 11 -->
+                    <li data-thumb="/assets/img/slider/reports.jpg" data-src="/assets/img/slider/reports.jpg"
+                        data-sub-html=".caption11">
+                        <img src="../public/assets/img/slider/reports.jpg" class="img-fluid" alt="reports"/>
+                        <div class="caption11 d-none">
+                            <h4>Reports</h4>
+                        </div>
+                    </li>
+                    <!--slider img 12 -->
+                    <li data-thumb="/assets/img/slider/tasks.jpg" data-src="/assets/img/slider/tasks.jpg"
+                        data-sub-html=".caption12">
+                        <img src="../public/assets/img/slider/tasks.jpg" class="img-fluid" alt="tasks"/>
+                        <div class="caption12 d-none">
+                            <h4>Tasks</h4>
+                        </div>
+                    </li>
+                    <!--slider img 13 -->
+                    <li data-thumb="/assets/img/slider/time-entries.jpg" data-src="/assets/img/slider/time-entries.jpg"
+                        data-sub-html=".caption13">
+                        <img src="../public/assets/img/slider/time-entries.jpg" class="img-fluid" alt="time entries"/>
+                        <div class="caption13 d-none">
+                            <h4>Time entries</h4>
+                        </div>
+                    </li>
+                    <!--slider img 14 -->
+                    <li data-thumb="/assets/img/slider/time-entries-from-tasks.jpg" data-src="/assets/img/slider/time-entries-from-tasks.jpg"
+                        data-sub-html=".caption14">
+                        <img src="../public/assets/img/slider/time-entries-from-tasks.jpg" class="img-fluid"
+                             alt="time entries from tasks"/>
+                        <div class="caption14 d-none">
+                            <h4>Time entries from tasks</h4>
+                        </div>
+                    </li>
+                    <!--slider img 15 -->
+                    <li data-thumb="/assets/img/slider/tracker-stopwatch.jpg" data-src="/assets/img/slider/tracker-stopwatch.jpg"
+                        data-sub-html=".caption15">
+                        <img src="../public/assets/img/slider/tracker-stopwatch.jpg" class="img-fluid"
+                        alt="tracker stopwatch"/>
+                        <div class="caption15 d-none">
+                            <h4>Tracker stopwatch</h4>
+                        </div>
+                    </li>
+                    <!--slider img 16 -->
+                    <li data-thumb="/assets/img/slider/users.jpg" data-src="/assets/img/slider/users.jpg"
+                        data-sub-html=".caption16">
+                        <img src="../public/assets/img/slider/users.jpg" class="img-fluid" alt="users"/>
+                        <div class="caption16 d-none">
+                            <h4>Users</h4>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <!-- /slider section -->
         </section>
@@ -490,19 +587,5 @@
             font-weight: bold;
             letter-spacing: 2px;
         }
-    }
-
-    .slider-column {
-        padding: 0 64px;
-
-        @media (min-width: 581px) {
-            padding: 0 48px;
-        }
-    }
-
-    .slider-caption {
-        display: inherit;
-        position: relative;
-        top: -36px;
     }
 </style>
