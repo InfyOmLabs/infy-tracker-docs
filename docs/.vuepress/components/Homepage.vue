@@ -209,7 +209,7 @@
             <div class="container-fluid position-relative slider-container">
                 <ul id="imageGallery">
                     <!--slider img 1 -->
-                    <li data-thumb="/assets/img/slider/clients.jpg" data-src="/assets/img/slider/clients.jpg"
+                    <li data-thumb="/infy-tracker/assets/img/slider/clients.jpg" data-src="/infy-tracker/assets/img/slider/clients.jpg"
                         data-sub-html=".caption1">
                         <img src="../public/assets/img/slider/clients.jpg" class="img-fluid" alt="clients"/>
                         <div class="caption1 d-none">
@@ -217,7 +217,7 @@
                         </div>
                     </li>
                     <!--slider img 2 -->
-                    <li data-thumb="/assets/img/slider/edit-Report.jpg" data-src="/assets/img/slider/edit-Report.jpg"
+                    <li data-thumb="/infy-tracker/assets/img/slider/edit-Report.jpg" data-src="/infy-tracker/assets/img/slider/edit-Report.jpg"
                         data-sub-html=".caption2">
                         <img src="../public/assets/img/slider/edit-Report.jpg" class="img-fluid" alt="Edit reports"/>
                         <div class="caption2 d-none">
@@ -225,7 +225,7 @@
                         </div>
                     </li>
                     <!--slider img 3 -->
-                    <li data-thumb="/assets/img/slider/edit-task-from-tasks.jpg" data-src="/assets/img/slider/edit-task-from-tasks.jpg"
+                    <li data-thumb="/infy-tracker/assets/img/slider/edit-task-from-tasks.jpg" data-src="/infy-tracker/assets/img/slider/edit-task-from-tasks.jpg"
                         data-sub-html=".caption3">
                         <img src="../public/assets/img/slider/edit-task-from-tasks.jpg" class="img-fluid" alt="edit task from tasks"/>
                         <div class="caption3 d-none">
@@ -233,8 +233,8 @@
                         </div>
                     </li>
                     <!--slider img 4 -->
-                    <li data-thumb="/assets/img/slider/edit-time-entry-from-time-entries.jpg"
-                        data-src="/assets/img/slider/edit-time-entry-from-time-entries.jpg"
+                    <li data-thumb="/infy-tracker/assets/img/slider/edit-time-entry-from-time-entries.jpg"
+                        data-src="/infy-tracker/assets/img/slider/edit-time-entry-from-time-entries.jpg"
                         data-sub-html=".caption4">
                         <img src="../public/assets/img/slider/edit-time-entry-from-time-entries.jpg" class="img-fluid"
                              alt="edit time entry from time entries"/>
@@ -243,7 +243,7 @@
                         </div>
                     </li>
                     <!--slider img 5 -->
-                    <li data-thumb="/assets/img/slider/new-Report.jpg" data-src="/assets/img/slider/new-Report.jpg"
+                    <li data-thumb="/infy-tracker/assets/img/slider/new-Report.jpg" data-src="/infy-tracker/assets/img/slider/new-Report.jpg"
                         data-sub-html=".caption5">
                         <img src="../public/assets/img/slider/new-Report.jpg" class="img-fluid" alt="New report"/>
                         <div class="caption5 d-none">
@@ -251,7 +251,7 @@
                         </div>
                     </li>
                     <!--slider img 6 -->
-                    <li data-thumb="/assets/img/slider/new-task-from-tasks.jpg" data-src="/assets/img/slider/new-task-from-tasks.jpg"
+                    <li data-thumb="/infy-tracker/assets/img/slider/new-task-from-tasks.jpg" data-src="/infy-tracker/assets/img/slider/new-task-from-tasks.jpg"
                         data-sub-html=".caption6">
                         <img src="../public/assets/img/slider/new-task-from-tasks.jpg" class="img-fluid"
                              alt="new task from tasks"/>
@@ -260,7 +260,8 @@
                         </div>
                     </li>
                     <!--slider img 7 -->
-                    <li data-thumb="/assets/img/slider/new-time-entry-from-tasks.jpg" data-src="/assets/img/slider/new-time-entry-from-tasks.jpg"
+                    <li data-thumb="/infy-tracker/assets/img/slider/new-time-entry-from-tasks.jpg"
+                        data-src="/infy-tracker/assets/img/slider/new-time-entry-from-tasks.jpg"
                         data-sub-html=".caption7">
                         <img src="../public/assets/img/slider/new-time-entry-from-tasks.jpg" class="img-fluid"
                              alt="new time entry from tasks"/>
@@ -269,8 +270,8 @@
                         </div>
                     </li>
                     <!--slider img 8 -->
-                    <li data-thumb="/assets/img/slider/new-time-entry-from-time-entries.jpg"
-                        data-src="/assets/img/slider/new-time-entry-from-time-entries.jpg"
+                    <li data-thumb="/infy-tracker/assets/img/slider/new-time-entry-from-time-entries.jpg"
+                        data-src="/infy-tracker/assets/img/slider/new-time-entry-from-time-entries.jpg"
                         data-sub-html=".caption8">
                         <img src="../public/assets/img/slider/new-time-entry-from-time-entries.jpg" class="img-fluid"
                              alt="new time entry from time entries"/>
@@ -279,7 +280,8 @@
                         </div>
                     </li>
                     <!--slider img 9 -->
-                    <li data-thumb="/assets/img/slider/projects.jpg" data-src="/assets/img/slider/projects.jpg"
+                    <li data-thumb="/infy-tracker/assets/img/slider/projects.jpg"
+                        data-src="/infy-tracker/assets/img/slider/projects.jpg"
                         data-sub-html=".caption9">
                         <img src="../public/assets/img/slider/projects.jpg" class="img-fluid" alt="projects"/>
                         <div class="caption9 d-none">
@@ -287,7 +289,8 @@
                         </div>
                     </li>
                     <!--slider img 10 -->
-                    <li data-thumb="/assets/img/slider/report-View.jpg" data-src="/assets/img/slider/report-View.jpg"
+                    <li data-thumb="/infy-tracker/assets/img/slider/report-View.jpg"
+                        data-src="/infy-tracker/assets/img/slider/report-View.jpg"
                         data-sub-html=".caption10">
                         <img src="../public/assets/img/slider/report-View.jpg" class="img-fluid" alt="report view"/>
                         <div class="caption10 d-none">
@@ -295,7 +298,8 @@
                         </div>
                     </li>
                     <!--slider img 11 -->
-                    <li data-thumb="/assets/img/slider/reports.jpg" data-src="/assets/img/slider/reports.jpg"
+                    <li data-thumb="/infy-tracker/assets/img/slider/reports.jpg"
+                        data-src="/infy-tracker/assets/img/slider/reports.jpg"
                         data-sub-html=".caption11">
                         <img src="../public/assets/img/slider/reports.jpg" class="img-fluid" alt="reports"/>
                         <div class="caption11 d-none">
@@ -303,7 +307,8 @@
                         </div>
                     </li>
                     <!--slider img 12 -->
-                    <li data-thumb="/assets/img/slider/tasks.jpg" data-src="/assets/img/slider/tasks.jpg"
+                    <li data-thumb="/infy-tracker/assets/img/slider/tasks.jpg"
+                        data-src="/infy-tracker/assets/img/slider/tasks.jpg"
                         data-sub-html=".caption12">
                         <img src="../public/assets/img/slider/tasks.jpg" class="img-fluid" alt="tasks"/>
                         <div class="caption12 d-none">
@@ -311,7 +316,8 @@
                         </div>
                     </li>
                     <!--slider img 13 -->
-                    <li data-thumb="/assets/img/slider/time-entries.jpg" data-src="/assets/img/slider/time-entries.jpg"
+                    <li data-thumb="/infy-tracker/assets/img/slider/time-entries.jpg"
+                        data-src="/infy-tracker/assets/img/slider/time-entries.jpg"
                         data-sub-html=".caption13">
                         <img src="../public/assets/img/slider/time-entries.jpg" class="img-fluid" alt="time entries"/>
                         <div class="caption13 d-none">
@@ -319,7 +325,8 @@
                         </div>
                     </li>
                     <!--slider img 14 -->
-                    <li data-thumb="/assets/img/slider/time-entries-from-tasks.jpg" data-src="/assets/img/slider/time-entries-from-tasks.jpg"
+                    <li data-thumb="/infy-tracker/assets/img/slider/time-entries-from-tasks.jpg"
+                        data-src="/infy-tracker/assets/img/slider/time-entries-from-tasks.jpg"
                         data-sub-html=".caption14">
                         <img src="../public/assets/img/slider/time-entries-from-tasks.jpg" class="img-fluid"
                              alt="time entries from tasks"/>
@@ -328,7 +335,8 @@
                         </div>
                     </li>
                     <!--slider img 15 -->
-                    <li data-thumb="/assets/img/slider/tracker-stopwatch.jpg" data-src="/assets/img/slider/tracker-stopwatch.jpg"
+                    <li data-thumb="/infy-tracker/assets/img/slider/tracker-stopwatch.jpg"
+                        data-src="/infy-tracker/assets/img/slider/tracker-stopwatch.jpg"
                         data-sub-html=".caption15">
                         <img src="../public/assets/img/slider/tracker-stopwatch.jpg" class="img-fluid"
                              alt="tracker stopwatch"/>
@@ -337,7 +345,8 @@
                         </div>
                     </li>
                     <!--slider img 16 -->
-                    <li data-thumb="/assets/img/slider/users.jpg" data-src="/assets/img/slider/users.jpg"
+                    <li data-thumb="/infy-tracker/assets/img/slider/users.jpg"
+                        data-src="/infy-tracker/assets/img/slider/users.jpg"
                         data-sub-html=".caption16">
                         <img src="../public/assets/img/slider/users.jpg" class="img-fluid" alt="users"/>
                         <div class="caption16 d-none">
