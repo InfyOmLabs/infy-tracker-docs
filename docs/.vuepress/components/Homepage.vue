@@ -191,13 +191,17 @@
                     </div>
                 </div>
             </div>
-            <div class="space-top bg-image">
+            <div class="bg-image">
                 <div class="container">
                     <div class="bg-style2">
                         <img src="../public/assets/img/bg-2.png" class="img-fluid" alt="#">
                     </div>
                 </div>
             </div>
+        </section>
+        <!--// Middle content-->
+        <!--==================== SLIDER - START TRACKING ====================-->
+        <section class="slider-section clearfix collapse-wrap">
             <!-- slider section -->
             <div class="center-title center-title--scrnshot">
                 <h2>Screenshots</h2>
@@ -233,7 +237,7 @@
                         data-src="/assets/img/slider/edit-time-entry-from-time-entries.jpg"
                         data-sub-html=".caption4">
                         <img src="../public/assets/img/slider/edit-time-entry-from-time-entries.jpg" class="img-fluid"
-                        alt="edit time entry from time entries"/>
+                             alt="edit time entry from time entries"/>
                         <div class="caption4 d-none">
                             <h4>Edit time entry from time entries</h4>
                         </div>
@@ -250,7 +254,7 @@
                     <li data-thumb="/assets/img/slider/new-task-from-tasks.jpg" data-src="/assets/img/slider/new-task-from-tasks.jpg"
                         data-sub-html=".caption6">
                         <img src="../public/assets/img/slider/new-task-from-tasks.jpg" class="img-fluid"
-                        alt="new task from tasks"/>
+                             alt="new task from tasks"/>
                         <div class="caption6 d-none">
                             <h4>New task from tasks</h4>
                         </div>
@@ -259,7 +263,7 @@
                     <li data-thumb="/assets/img/slider/new-time-entry-from-tasks.jpg" data-src="/assets/img/slider/new-time-entry-from-tasks.jpg"
                         data-sub-html=".caption7">
                         <img src="../public/assets/img/slider/new-time-entry-from-tasks.jpg" class="img-fluid"
-                        alt="new time entry from tasks"/>
+                             alt="new time entry from tasks"/>
                         <div class="caption7 d-none">
                             <h4>New time entry from task</h4>
                         </div>
@@ -269,7 +273,7 @@
                         data-src="/assets/img/slider/new-time-entry-from-time-entries.jpg"
                         data-sub-html=".caption8">
                         <img src="../public/assets/img/slider/new-time-entry-from-time-entries.jpg" class="img-fluid"
-                        alt="new time entry from time entries"/>
+                             alt="new time entry from time entries"/>
                         <div class="caption8 d-none">
                             <h4>New time entry from time entries</h4>
                         </div>
@@ -327,7 +331,7 @@
                     <li data-thumb="/assets/img/slider/tracker-stopwatch.jpg" data-src="/assets/img/slider/tracker-stopwatch.jpg"
                         data-sub-html=".caption15">
                         <img src="../public/assets/img/slider/tracker-stopwatch.jpg" class="img-fluid"
-                        alt="tracker stopwatch"/>
+                             alt="tracker stopwatch"/>
                         <div class="caption15 d-none">
                             <h4>Tracker stopwatch</h4>
                         </div>
@@ -343,27 +347,7 @@
                 </ul>
             </div>
             <!-- /slider section -->
-        </section>
-        <!--// Middle content-->
-        <!--==================== ADD ====================-->
-        <section class="add-section clearfix collapse-wrap">
-            <div class="container">
-                <div class="row justify-content-around">
-                    <div class="count-column count-column--build">
-                        <div class="count-column__number counter">1234</div>
-                        <div class="count-column__title mt-2">Builds</div>
-                    </div>
-                    <div class="count-column count-column--download">
-                        <div class="count-column__number counter">5678</div>
-                        <div class="count-column__title mt-2">Downloads</div>
-                    </div>
-                    <div class="count-column count-column--commit">
-                        <div class="count-column__number counter">9123</div>
-                        <div class="count-column__title mt-2">Commits</div>
-                    </div>
-                </div>
-            </div>
-            <div class="container space-top">
+            <div class="container space-top start-track-time">
                 <div class="row justify-content-center">
                     <div class="col-md-10">
                         <div class="add-box d-flex align-items-center flex-column flex-lg-row justify-content-between">
@@ -379,7 +363,7 @@
                 </div>
             </div>
         </section>
-        <!--//END ADD -->
+        <!--//END SLIDER - START TRACKING -->
         <footer>
             <div class="container">
                 <div class="row">
