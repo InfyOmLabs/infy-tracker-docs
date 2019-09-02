@@ -269,87 +269,77 @@
                             <h4>New time entry from task</h4>
                         </div>
                     </li>
-                    <!--slider img 8 -->
-                    <li data-thumb="/infy-tracker/assets/img/slider/new-time-entry-from-time-entries.jpg"
-                        data-src="/infy-tracker/assets/img/slider/new-time-entry-from-time-entries.jpg"
-                        data-sub-html=".caption8">
-                        <img src="../public/assets/img/slider/new-time-entry-from-time-entries.jpg" class="img-fluid"
-                             alt="new time entry from time entries"/>
-                        <div class="caption8 d-none">
-                            <h4>New time entry from time entries</h4>
-                        </div>
-                    </li>
-                    <!--slider img 9 -->
+                    <!--slider img 8-->
                     <li data-thumb="/infy-tracker/assets/img/slider/projects.jpg"
                         data-src="/infy-tracker/assets/img/slider/projects.jpg"
-                        data-sub-html=".caption9">
+                        data-sub-html=".caption8">
                         <img src="../public/assets/img/slider/projects.jpg" class="img-fluid" alt="projects"/>
-                        <div class="caption9 d-none">
+                        <div class="caption8 d-none">
                             <h4>Projects</h4>
                         </div>
                     </li>
-                    <!--slider img 10 -->
+                    <!-- slider img 9 -->
                     <li data-thumb="/infy-tracker/assets/img/slider/report-View.jpg"
                         data-src="/infy-tracker/assets/img/slider/report-View.jpg"
-                        data-sub-html=".caption10">
+                        data-sub-html=".caption9">
                         <img src="../public/assets/img/slider/report-View.jpg" class="img-fluid" alt="report view"/>
-                        <div class="caption10 d-none">
+                        <div class="caption9 d-none">
                             <h4>Report view</h4>
                         </div>
                     </li>
-                    <!--slider img 11 -->
+                    <!--slider img 10 -->
                     <li data-thumb="/infy-tracker/assets/img/slider/reports.jpg"
                         data-src="/infy-tracker/assets/img/slider/reports.jpg"
-                        data-sub-html=".caption11">
+                        data-sub-html=".caption10">
                         <img src="../public/assets/img/slider/reports.jpg" class="img-fluid" alt="reports"/>
-                        <div class="caption11 d-none">
+                        <div class="caption10 d-none">
                             <h4>Reports</h4>
                         </div>
                     </li>
-                    <!--slider img 12 -->
+                    <!--slider img 11 -->
                     <li data-thumb="/infy-tracker/assets/img/slider/tasks.jpg"
                         data-src="/infy-tracker/assets/img/slider/tasks.jpg"
-                        data-sub-html=".caption12">
+                        data-sub-html=".caption11">
                         <img src="../public/assets/img/slider/tasks.jpg" class="img-fluid" alt="tasks"/>
-                        <div class="caption12 d-none">
+                        <div class="caption11 d-none">
                             <h4>Tasks</h4>
                         </div>
                     </li>
-                    <!--slider img 13 -->
+                    <!--slider img 12 -->
                     <li data-thumb="/infy-tracker/assets/img/slider/time-entries.jpg"
                         data-src="/infy-tracker/assets/img/slider/time-entries.jpg"
-                        data-sub-html=".caption13">
+                        data-sub-html=".caption12">
                         <img src="../public/assets/img/slider/time-entries.jpg" class="img-fluid" alt="time entries"/>
-                        <div class="caption13 d-none">
+                        <div class="caption12 d-none">
                             <h4>Time entries</h4>
                         </div>
                     </li>
-                    <!--slider img 14 -->
+                    <!--slider img 13 -->
                     <li data-thumb="/infy-tracker/assets/img/slider/time-entries-from-tasks.jpg"
                         data-src="/infy-tracker/assets/img/slider/time-entries-from-tasks.jpg"
-                        data-sub-html=".caption14">
+                        data-sub-html=".caption13">
                         <img src="../public/assets/img/slider/time-entries-from-tasks.jpg" class="img-fluid"
                              alt="time entries from tasks"/>
-                        <div class="caption14 d-none">
+                        <div class="caption13 d-none">
                             <h4>Time entries from tasks</h4>
                         </div>
                     </li>
-                    <!--slider img 15 -->
+                    <!--slider img 14 -->
                     <li data-thumb="/infy-tracker/assets/img/slider/tracker-stopwatch.jpg"
                         data-src="/infy-tracker/assets/img/slider/tracker-stopwatch.jpg"
-                        data-sub-html=".caption15">
+                        data-sub-html=".caption14">
                         <img src="../public/assets/img/slider/tracker-stopwatch.jpg" class="img-fluid"
                              alt="tracker stopwatch"/>
-                        <div class="caption15 d-none">
+                        <div class="caption14 d-none">
                             <h4>Tracker stopwatch</h4>
                         </div>
                     </li>
-                    <!--slider img 16 -->
+                    <!--slider img 15 -->
                     <li data-thumb="/infy-tracker/assets/img/slider/users.jpg"
                         data-src="/infy-tracker/assets/img/slider/users.jpg"
-                        data-sub-html=".caption16">
+                        data-sub-html=".caption15">
                         <img src="../public/assets/img/slider/users.jpg" class="img-fluid" alt="users"/>
-                        <div class="caption16 d-none">
+                        <div class="caption15 d-none">
                             <h4>Users</h4>
                         </div>
                     </li>
@@ -433,7 +423,55 @@
         computed: {
             data() {
                 return this.$page.frontmatter;
-            }
+            },
+        },
+
+        mounted: function () {
+
+            setTimeout(()=>{
+                // disable download option
+                $('#imageGallery').lightGallery({
+                    download: false
+                });
+                // init image gallery slider
+                $("#imageGallery").lightSlider({
+                    gallery: true,
+                    item: 4,
+                    loop: true,
+                    slideMargin: 30,
+                    onSliderLoad: function (el) {
+                        el.lightGallery({
+                            selector: '#imageGallery .lslide'
+                        });
+                    },
+                    responsive : [
+                        {
+                            breakpoint:1200,
+                            settings: {
+                                item:4,
+                                slideMove:1,
+                                slideMargin:30,
+                            }
+                        },
+                        {
+                            breakpoint:992,
+                            settings: {
+                                item:3,
+                                slideMove:1,
+                                slideMargin:20,
+                            }
+                        },
+                        {
+                            breakpoint:576,
+                            settings: {
+                                item:1,
+                                slideMove:1
+                            }
+                        }
+                    ]
+
+                });
+            }, 100)
         }
     }
 </script>
