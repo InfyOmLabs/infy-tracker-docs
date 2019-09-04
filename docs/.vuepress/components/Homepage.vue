@@ -209,152 +209,182 @@
             <div id="imageGallery" class="screenshot-section d-flex flex-wrap">
                 <!-- screenshot image 1 -->
                 <div class="screenshot-section__col">
-                    <div class="screenshot-section__col-item" data-src="/infy-tracker/assets/img/screenshot/clients.jpg">
-                        <img src="../public/assets/img/screenshot/clients.jpg" alt="" class="img-fluid">
+                    <div class="screenshot-section__col-item"
+                         data-src="/infy-tracker/assets/img/screenshot/clients.jpg"
+                         data-sub-html=".caption1">
+                        <img src="../public/assets/img/screenshot/clients.jpg" alt="clients" class="img-fluid">
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-4 text-center caption1">
                         Clients
                     </div>
                 </div>
                 <!-- screenshot image 2 -->
                 <div class="screenshot-section__col">
-                    <div class="screenshot-section__col-item" data-src="/infy-tracker/assets/img/screenshot/edit-report.jpg">
-                        <img src="../public/assets/img/screenshot/edit-report.jpg" alt="" class="img-fluid">
+                    <div class="screenshot-section__col-item"
+                         data-src="/infy-tracker/assets/img/screenshot/edit-report.jpg"
+                         data-sub-html=".caption2">
+                        <img src="../public/assets/img/screenshot/edit-report.jpg" alt="edit-report" class="img-fluid">
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-4 text-center caption2">
                         Edit reports
                     </div>
                 </div>
                 <!-- screenshot image 3 -->
-                <div class="screenshot-section__col" data-src="/infy-tracker/assets/img/screenshot/edit-task-from-tasks.jpg">
-                    <div class="screenshot-section__col-item">
+                <div class="screenshot-section__col">
+                    <div class="screenshot-section__col-item"
+                         data-src="/infy-tracker/assets/img/screenshot/edit-task-from-tasks.jpg"
+                         data-sub-html=".caption3">
                         <img src="../public/assets/img/screenshot/edit-task-from-tasks.jpg" alt="" class="img-fluid">
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-4 text-center caption3">
                         Edit task from tasks
                     </div>
                 </div>
                 <!-- screenshot image 4 -->
                 <div class="screenshot-section__col">
                     <div class="screenshot-section__col-item"
-                         data-src="/infy-tracker/assets/img/screenshot/edit-time-entry-from-time-entries.jpg">
-                        <img src="../public/assets/img/screenshot/edit-time-entry-from-time-entries.jpg" alt="" class="img-fluid">
+                         data-src="/infy-tracker/assets/img/screenshot/edit-time-entry-from-time-entries.jpg"
+                         data-sub-html=".caption4">
+                        <img src="../public/assets/img/screenshot/edit-time-entry-from-time-entries.jpg"
+                             alt="edit-time-entry-from-time-entries" class="img-fluid">
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-4 text-center caption4">
                         Edit time entry from time entries
                     </div>
                 </div>
                 <!-- screenshot image 5 -->
                 <div class="screenshot-section__col">
                     <div class="screenshot-section__col-item"
-                         data-src="/infy-tracker/assets/img/screenshot/new-report.jpg">
-                        <img src="../public/assets/img/screenshot/new-report.jpg" alt="" class="img-fluid">
+                         data-src="/infy-tracker/assets/img/screenshot/new-report.jpg"
+                         data-sub-html=".caption5">
+                        <img src="../public/assets/img/screenshot/new-report.jpg" alt="new-report" class="img-fluid">
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-4 text-center caption5">
                         New Report
                     </div>
                 </div>
                 <!-- screenshot image 6 -->
                 <div class="screenshot-section__col">
                     <div class="screenshot-section__col-item"
-                         data-src="/infy-tracker/assets/img/screenshot/new-task-from-tasks.jpg">
-                        <img src="../public/assets/img/screenshot/new-task-from-tasks.jpg" alt="" class="img-fluid">
+                         data-src="/infy-tracker/assets/img/screenshot/new-task-from-tasks.jpg"
+                         data-sub-html=".caption6">
+                        <img src="../public/assets/img/screenshot/new-task-from-tasks.jpg"
+                             alt="new-task-from-tasks" class="img-fluid">
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-4 text-center caption6">
                         New task from task
                     </div>
                 </div>
                 <!-- screenshot image 7 -->
                 <div class="screenshot-section__col">
                     <div class="screenshot-section__col-item"
-                         data-src="/infy-tracker/assets/img/screenshot/new-time-entry-from-tasks.jpg">
-                        <img src="../public/assets/img/screenshot/new-time-entry-from-tasks.jpg" alt="" class="img-fluid">
+                         data-src="/infy-tracker/assets/img/screenshot/new-time-entry-from-tasks.jpg"
+                         data-sub-html=".caption7">
+                        <img src="../public/assets/img/screenshot/new-time-entry-from-tasks.jpg"
+                             alt="new-time-entry-from-tasks" class="img-fluid">
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-4 text-center caption7">
                         New time entries from tasks
                     </div>
                 </div>
                 <!-- screenshot image 8 -->
                 <div class="screenshot-section__col">
                     <div class="screenshot-section__col-item"
-                         data-src="/infy-tracker/assets/img/screenshot/projects.jpg">
-                        <img src="../public/assets/img/screenshot/projects.jpg" alt="" class="img-fluid">
+                         data-src="/infy-tracker/assets/img/screenshot/projects.jpg"
+                         data-sub-html=".caption8">
+                        <img src="../public/assets/img/screenshot/projects.jpg"
+                             alt="projects" class="img-fluid">
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-4 text-center caption8">
                         Projects
                     </div>
                 </div>
                 <!-- screenshot image 9 -->
                 <div class="screenshot-section__col">
                     <div class="screenshot-section__col-item"
-                         data-src="/infy-tracker/assets/img/screenshot/report-view.jpg">
-                        <img src="../public/assets/img/screenshot/report-view.jpg" alt="" class="img-fluid">
+                         data-src="/infy-tracker/assets/img/screenshot/report-view.jpg"
+                         data-sub-html=".caption9">
+                        <img src="../public/assets/img/screenshot/report-view.jpg"
+                             alt="report-view" class="img-fluid">
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-4 text-center caption9">
                         Report View
                     </div>
                 </div>
                 <!-- screenshot image 10 -->
                 <div class="screenshot-section__col">
                     <div class="screenshot-section__col-item"
-                         data-src="/infy-tracker/assets/img/screenshot/reports.jpg">
-                        <img src="../public/assets/img/screenshot/reports.jpg" alt="" class="img-fluid">
+                         data-src="/infy-tracker/assets/img/screenshot/reports.jpg"
+                         data-sub-html=".caption10">
+                        <img src="../public/assets/img/screenshot/reports.jpg"
+                             alt="reports" class="img-fluid">
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-4 text-center caption10">
                         Reports
                     </div>
                 </div>
                 <!-- screenshot image 11 -->
                 <div class="screenshot-section__col">
                     <div class="screenshot-section__col-item"
-                         data-src="/infy-tracker/assets/img/screenshot/tasks.jpg">
-                        <img src="../public/assets/img/screenshot/tasks.jpg" alt="" class="img-fluid">
+                         data-src="/infy-tracker/assets/img/screenshot/tasks.jpg"
+                         data-sub-html=".caption11">
+                        <img src="../public/assets/img/screenshot/tasks.jpg"
+                             alt="tasks" class="img-fluid">
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-4 text-center caption11">
                         Task
                     </div>
                 </div>
                 <!-- screenshot image 12 -->
                 <div class="screenshot-section__col">
                     <div class="screenshot-section__col-item"
-                         data-src="/infy-tracker/assets/img/screenshot/time-entries.jpg">
-                        <img src="../public/assets/img/screenshot/time-entries.jpg" alt="" class="img-fluid">
+                         data-src="/infy-tracker/assets/img/screenshot/time-entries.jpg"
+                         data-sub-html=".caption12">
+                        <img src="../public/assets/img/screenshot/time-entries.jpg"
+                             alt="time-entries" class="img-fluid">
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-4 text-center caption12">
                         Time entries
                     </div>
                 </div>
                 <!-- screenshot image 13 -->
                 <div class="screenshot-section__col">
                     <div class="screenshot-section__col-item"
-                         data-src="/infy-tracker/assets/img/screenshot/time-entries-from-tasks.jpg">
-                        <img src="../public/assets/img/screenshot/time-entries-from-tasks.jpg" alt="" class="img-fluid">
+                         data-src="/infy-tracker/assets/img/screenshot/time-entries-from-tasks.jpg"
+                         data-sub-html=".caption13">
+                        <img src="../public/assets/img/screenshot/time-entries-from-tasks.jpg"
+                             alt="time-entries-from-tasks" class="img-fluid">
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-4 text-center caption13">
                         Time entries from tasks
                     </div>
                 </div>
                 <!-- screenshot image 14 -->
                 <div class="screenshot-section__col">
                     <div class="screenshot-section__col-item"
-                         data-src="/infy-tracker/assets/img/screenshot/tracker-stopwatch.jpg">
-                        <img src="../public/assets/img/screenshot/tracker-stopwatch.jpg" alt="" class="img-fluid">
+                         data-src="/infy-tracker/assets/img/screenshot/tracker-stopwatch.jpg"
+                         data-sub-html=".caption14">
+                        <img src="../public/assets/img/screenshot/tracker-stopwatch.jpg"
+                             alt="tracker-stopwatch" class="img-fluid">
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-4 text-center caption14">
                         Tracker stopwatch
                     </div>
                 </div>
                 <!-- screenshot image 15 -->
                 <div class="screenshot-section__col">
-                    <div class="screenshot-section__col-item" data-src="/infy-tracker/assets/img/screenshot/users.jpg">
-                        <img src="../public/assets/img/screenshot/users.jpg" alt="" class="img-fluid">
+                    <div class="screenshot-section__col-item"
+                         data-src="/infy-tracker/assets/img/screenshot/users.jpg"
+                         data-sub-html=".caption15">
+                        <img src="../public/assets/img/screenshot/users.jpg"
+                             alt="users" class="img-fluid">
                     </div>
-                    <div class="p-4 text-center">
+                    <div class="p-4 text-center caption15">
                         Users
                     </div>
                 </div>
             </div>
-            <!-- /slider section -->
+            <!-- /screenshot section -->
             <div class="container space-top start-track-time">
                 <div class="row justify-content-center">
                     <div class="col-md-10">
