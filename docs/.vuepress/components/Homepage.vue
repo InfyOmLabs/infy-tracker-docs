@@ -247,8 +247,8 @@
                 <!-- screenshot image 5 -->
                 <div class="screenshot-section__col">
                     <div class="screenshot-section__col-item"
-                         data-src="/infy-tracker/assets/img/slider/new-Report.jpg">
-                        <img src="../public/assets/img/slider/new-Report.jpg" alt="" class="img-fluid">
+                         data-src="/infy-tracker/assets/img/slider/new-report.jpg">
+                        <img src="../public/assets/img/slider/new-report.jpg" alt="" class="img-fluid">
                     </div>
                     <div class="p-4 text-center">
                         New Report
@@ -626,6 +626,7 @@
                 border-radius: 5px;
                 overflow: hidden;
                 transition: .3s all;
+                cursor: pointer;
             }
         }
 
