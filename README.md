@@ -39,7 +39,7 @@ You can support us by either sponsoring us or buying one of our paid products. O
 
 ### Buy our Paid Products
 
-[![InfyChat](https://assets.infyom.com/open-source/infychat-banner.png)](https://codecanyon.net/item/infychat-laravel-chat-app-package/25054608)
+[![InfyChat](https://assets.infyom.com/open-source/infyprojects-banner.png)](https://codecanyon.net/item/infyprojects-project-management-system/29295013)
 
 You can also check out our other paid products on [CodeCanyon](https://codecanyon.net/user/infyomlabs/portfolio).
 
