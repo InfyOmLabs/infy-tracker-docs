@@ -3,27 +3,18 @@
 InfyTracker Docs
 ==========================
 
-Documentation for [InfyTracker](http://labs.infyom.com/infy-tracker/) powered by [VuePress](https://vuepress.vuejs.org/).
-
-## Installation Guide
-### Clone the repo
-Clone the repo from Github with the following command.
-
-`git clone git@github.com:InfyOmLabs/infy-tracker-docs.git`
-
-### Install [VuePress](https://vuepress.vuejs.org/).
-Install VuePress with the following command.
-`yarn global add vuepress` OR `npm install -g vuepress`
-
-### Build the project
-for start writing `npm run docs:dev` 
-for build to static files `npm run docs:build`
-
 ## Support Us
 
 We have created [14+ Laravel packages](https://github.com/InfyOmLabs) and invested a lot of resources into creating these all packages and maintaining them.
 
 You can support us by either sponsoring us or buying one of our paid products. Or help us by spreading the word about us on social platforms via tweets and posts.
+
+### Buy our Paid Products
+
+[![InfyProjects](https://assets.infyom.com/open-source/new/infyprojects-banner.png)](https://1.envato.market/YgR3ne)
+
+You can also check out our other paid products on [CodeCanyon](https://1.envato.market/BXAnR1).
+
 
 ### Sponsors
 
@@ -37,12 +28,6 @@ You can support us by either sponsoring us or buying one of our paid products. O
 
 <a href="https://opencollective.com/infyomlabs#backer"><img src="https://opencollective.com/infyomlabs/backers.svg?width=890"></a>
 
-### Buy our Paid Products
-
-[![InfyProjects](https://assets.infyom.com/open-source/infyprojects-banner.png)](https://1.envato.market/kjOGM0)
-
-You can also check out our other paid products on [CodeCanyon](https://codecanyon.net/user/infyomlabs/portfolio).
-
 ### Follow Us
 
 - [Twitter](https://twitter.com/infyom)
@@ -54,3 +39,16 @@ You can also check out our other paid products on [CodeCanyon](https://codecanyo
 ## Made with InfyOm Generator
 
 Also, Do not forget to add your website to [Made with InfyOm Generator List](https://github.com/InfyOmLabs/laravel-generator/blob/develop/made-with-generator.md) list.
+
+## Security
+
+If you discover any security-related issues, create an issue using the issue tracker.
+
+## Credits
+
+- [InfyOm Technologies](https://github.com/infyomlabs)
+- [All Contributors](../../contributors)
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
